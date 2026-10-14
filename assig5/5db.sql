@@ -291,18 +291,18 @@ CREATE TABLE order_items(
 );
 
 INSERT INTO categories VALUES
-    (1, 'Electronics'), 
-    (2, 'Books');
+(1, 'Electronics'), 
+(2, 'Books');
 INSERT INTO products_fk VALUES
-    (1, 'Laptop', 1), 
-    (2, 'Novel', 2);
+(1, 'Laptop', 1), 
+(2, 'Novel', 2);
 INSERT INTO orders VALUES
-    (1, '2026-10-01'), 
-    (2, '2026-10-02');
+(1, '2026-10-01'), 
+(2, '2026-10-02');
 INSERT INTO order_items VALUES
-    (1, 1, 1, 2), 
-    (2, 1, 2, 1), 
-    (3, 2, 1, 5);
+(1, 1, 1, 2), 
+(2, 1, 2, 1), 
+(3, 2, 1, 5);
 
 -- Scenario 1: delete a category that has products (RESTRICT)
 -- DELETE FROM categories WHERE category_id = 1;
